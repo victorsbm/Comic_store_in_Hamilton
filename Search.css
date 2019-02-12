@@ -1,0 +1,130 @@
+
+
+@media (orientation: landscape){/* Use as landscape model and computer screen */
+	body {/*To change the background color of the page and set the liquid layout */
+		width: 98%;
+		margin: 0 auto;
+		background-color: yellow;
+	}
+	#page {/*To make the page to overflow auto depend on the size of screen*/
+		overflow: auto;
+	}
+	header{	/*To change the header background color to orange*/
+		background-color: orange;
+	}
+	#pagetitle{/*To make the title to the middle of the header */
+		text-align: center;
+	}
+	nav, footer{	/*To change background color and the text color  navigation and footer */
+		clear: both;
+		color: black;
+		background-color: #aeaca8;
+	}
+
+	/* Make the navigation in meun into line, and make the distance between the link */
+	nav li{
+		display: inline;
+		padding: 2em;
+	}
+	#main{/*In order to liquid layout, to make the main to cover the area between the header and the rooter */
+		width: 100%;
+		height: 100%;
+		
+	}
+	/*Make the sidebar to the left and change the background color of the sidebar */
+	aside{
+		background-color: orange;
+		margin:1%;
+		float: left;
+		width: 20%;
+		height: 100%;
+		padding: 2em;
+	}
+	#content{
+		float: right;/*Make the content to the right */	
+		width: 70%;
+	}
+	input{	/* Change the color of input interface */
+		background-color: #f0ffff
+	}
+	img{
+		width:100%;/* Create the liquidity of the image */
+	}
+	
+	
+}
+
+
+
+@media (orientation: portrait){/* Use as portrait model */
+	body {/*To change the background color of the page and set the liquid layout */
+		width: 98%;
+		margin: 0 auto;
+		background-color: yellow;
+	}
+	#page {/*To make the page to overflow auto depend on the size of screen*/
+		overflow: auto;
+	}
+	h1{/*change the size of title*/
+		font-size: 60px;
+		
+	}
+	
+	select {
+		width: 98%;
+        height:50px;
+        line-height:55px;
+		font-size: 40px;
+    }  
+	
+	input{
+		width: 98%; height:40px;
+		font-size: 35px;
+	}
+	
+	p, li, label {/*change the size of the fonts*/
+		font-size: 60px;
+		
+	}
+	
+	header{	/*To change the header background color to orange*/
+		background-color: orange;
+	}
+	#pagetitle{/*To make the title to the middle of the header */
+		text-align: center;
+	}
+	nav, footer{	/*To change background color and the text color  navigation and footer */
+		clear: both;
+		color: black;
+		background-color: #aeaca8;
+	}
+
+	/* Make the navigation in meun into line, and make the distance between the link */
+	nav li{
+		display: inline;
+		padding: 2em;
+	}
+	#main{/*In order to liquid layout, to make the main to cover the area between the header and the rooter */
+		width: 100%;
+		height: 100%;
+		
+	}
+	/* change the background color of the sidebar */
+	aside{
+		background-color: orange;
+		margin:1%;
+		padding: 2em;
+	}
+	#content{
+		width: 95%;
+	}
+	input{	/* Change the color of input interface */
+		background-color: #f0ffff
+	}
+	img{
+		width:100%;/* Create the liquidity of the image */
+	}
+	
+}
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- To make a XHTML Structure with HTML5 doctype, XHTML tags must be written in lower case-->
+<head>
+<title> Comic store in Hamilton </title>
+<meta charset="UTF-8">
+<link href="Submission.css" type="text/css" rel="stylesheet" />
+<!-- Connect the external css -->
+
+</head>
+<body><!-- Make the title in header -->
+<div id="page"><!-- Group all the parts of the page -->
+	<header>
+		<div id="pagetitle">
+			<h1> Comic store in Hamilton </h1>
+		</div>
+	<div id="menu"><!-- Make the navigation in a <nav> element -->
+		<nav>
+			<ul>
+				<li><a href=""> Home </a></li><!-- Since some of them are broken links because I don't have implemented all of the website -->
+				<li><a href="Search.html"> Search </a></li>
+				<li><a href=""> Video </a></li>
+				<li><a href=""> About </a></li>
+				<li><a href=""> Contact </a></li>
+			</ul>
+		</nav>
+	</div>	
+	</header>
+	<div id="main">
+	<aside>
+		<ul><!--Make the register and log In in Sidebar -->
+		<li><a href="Registration.html"> Sign up </a></li>
+		<li><a href=" "> Log In </a></li>
+		</ul>
+		<br />
+	
+		<fieldset><!-- Create the news form in the sidebar-->
+		<legend> News: </legend>
+			<p><em>News: <strong>Anime North 2017</strong> is coming soon!</em></p>
+			<p>Anime North is an anime convention located in Toronto, Canada that celebrates anime, manga, music, games and all other forms of Japanese Culture!
+			Anime North will be the weekend of May 26 - 28, 2017 at the Toronto Congress Centre and International Plaza Hotel.</p>
+				<img src="animenorthlogo.png" alt="Magpie picture"/><!-- Add the image into news form-->
+		</fieldset>
+		<fieldset>
+		<legend> Find a friend: </legend><!-- Create the form to let user to find someone who has the same habbit -->
+			<ul>
+			<li><a href=""> facebook </a></li>
+			<li><a href=""> twitter </a></li>
+			</ul>
+		</fieldset>
+	</aside>
+	<div id="content">
+		<form action="action_page.php" method="post">
+		<fieldset><!-- Use the fieldset to enclose the upload interface -->
+			<legend>Upload</legend>
+				<label for="objectname"> Name (Required): <!-- User can enter the object name into text line -->
+				<input id="objectname" type ="text" name="object"  size="30" maxlength="20" required></label>
+				<br /><!-- Create the space between the name and next label -->
+				<br />
+				<label for="description"> Description (Optional): </label><!-- User can upload the description into the text box -->
+				<br />
+				<textarea rows="5" id="description"></textarea>
+				<br /><br />
+				<label for="upload_pic"> Upload an image in PNG format(Optional): <br />
+				<input id="upload_pic" type="file" name="upload_image"><!-- With file type, user can upload the picture -->
+				</label>
+				<input type="submit" value="Upload"><!-- Create the button to submit -->
+				<br />
+				<br />
+				<label> Please enter the website(Optional): </label>
+				<input id="lat" type ="text" name="latitude" size="30" maxlength="20" optional>
+				<br />
+				<br />
+				<label> Please enter the Latitude - Longitude coordinates (Required): </label>
+				<br />
+				<label for="lat"> Lat(must contain 6 or more characters): </label><!-- Create the label, and the text type to enter the Latitude coordinate -->
+				<input id="lat" type ="text" name="latitude" size="30" maxlength="20" pattern="[0-9-].{6,}" title="Allow '0-9' , '.' and '-' only" required>
+				<label for="long"> Long(must contain 6 or more characters): </label><!-- Enter the longitude coordinate -->
+				<input id="long" type ="text" name="longitude" size="30" maxlength="20" pattern="[0-9.-].{6,}" title="Allow '0-9' , '.' and '-' only" required>
+				
+				<input type="submit" value="Submit">
+		</fieldset>
+		</form>
+	</div>
+	</div>
+	<footer><!-- Make the footer part -->
+		<p>&copy; Copyright 2016</p><!-- Create the footer on the bottom of the pages -->
+	</footer>
+</div>
+</body>
+
+</html>

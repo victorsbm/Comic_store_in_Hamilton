@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- To make a XHTML Structure with HTML5 doctype, XHTML tags must be written in lower case-->
+<head>
+<title> Comic store in Hamilton </title>
+<meta charset="UTF-8">
+<link href="Registration.css" type="text/css" rel="stylesheet" />
+<!-- Connect the external css -->
+
+
+<!-- Load function's Javascript of project -->
+<script type="text/javascript" src="projectjs.js"></script>
+</head>
+<body><!-- Make the title in header -->
+<div id="page"><!-- Group all the parts of the page -->
+	<header>
+		<div id="pagetitle">
+			<h1> Comic store in Hamilton </h1>
+		</div>
+	<div id="menu"><!-- Make the navigation in a <nav> element -->
+		<nav>
+			<ul>
+				<li><a href=""> Home </a></li>
+				<li><a href="Search.html"> Search </a></li>
+				<li><a href=""> Video </a></li>
+				<li><a href=""> About </a></li>
+				<li><a href=""> Contact </a></li>
+			</ul>
+		</nav>
+	</div>	
+	</header>
+	<div id="main">
+	<aside><!-- Create the sidebar on the left, with css-->
+		<ul><!--Make the register and log In in Sidebar -->
+		<li><a href="Registration.html"> Sign up </a></li>
+		<li><a href=" "> Log In </a></li>
+		</ul>
+		<br />
+	
+		<fieldset><!-- Create the news form in the sidebar-->
+		<legend> News: </legend>
+			<p><em>News: <strong>Anime North 2017</strong> is coming soon!</em></p>
+			<p>Anime North is an anime convention located in Toronto, Canada that celebrates anime, manga, music, games and all other forms of Japanese Culture!
+			Anime North will be the weekend of May 26 - 28, 2017 at the Toronto Congress Centre and International Plaza Hotel.</p>
+				<img src="animenorthlogo.png" alt="Magpie picture"/><!-- Add the image into news form-->
+		</fieldset>
+		<fieldset>
+		<legend> Find a friend: </legend>
+			<ul>
+			<li><a href=""> facebook </a></li>
+			<li><a href=""> twitter </a></li>
+			</ul>
+		</fieldset>
+	</aside>
+	<div id="content">
+		<div id="registration">
+			<form method="post" action="" onsubmit="return validateForm(this);">
+		
+			<fieldset>
+			<legend> Sign Up </legend>	
+			<label>User Name: <br /><input type ="text" id="use_id" name="use_id" size="30" maxlength="20"></label>
+			<br />
+	
+	
+			<label for="password_input">Password: <br />
+			<input id="password_input" type ="text" name="password_input" size="30" maxlength="20"> </label>
+			<br />
+			<label for="confirm_password_input">Confirm password: <br />
+			<input id="confirm_password_input" type ="text" name="confirm_password_input" size="30" maxlength="20"></label>
+
+			<br />	
+			<br />
+			
+				<label>Gender: </label> 
+				<label for="male">Male </label>
+				<input id="male" type="radio" name="gender" value="m"><!-- Make the radio type to input the gender of the register -->
+				<label for="female">Female </label>
+				<input id="female" type="radio" name="gender" value="f">
+				<br />
+				<label>Birth: </label>
+				<br />
+				<label for="birth_month">
+				<select name="birth_month" id="birth_month"><!-- Make the select type to select the birth of the register -->
+					<option value="0">mm</option><!-- select the month of register -->
+					<option value="1">01</option>
+					<option value="2">02</option>
+					<option value="3">03</option>
+					<option value="4">04</option>
+					<option value="5">05</option>
+					<option value="6">06</option>
+					<option value="7">07</option>
+					<option value="8">08</option>
+					<option value="9">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				</label>
+				<label for="birth_day">
+				<select name="birth_day" id="birth_day">
+					<option value="0">dd</option><!-- select the day of register -->
+					<option value="1">01</option>
+					<option value="2">02</option>
+					<option value="3">03</option>
+					<option value="4">04</option>
+					<option value="5">05</option>
+					<option value="6">06</option>
+					<option value="7">07</option>
+					<option value="8">08</option>
+					<option value="9">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+				</label>
+				<br />
+				<label for="email">Email (Required): <br />
+				<input id="email" type ="email" name="email" size="30" maxlength="50"></label><!-- Make the email type to make user to input the email -->
+
+				<br />
+				<label for="phone_num">Phone Number (Required): <br />
+				<input id="phone_num" type ="text" name="phone_num" size="30" maxlength="20"></label>
+				<br />
+				<input type ="checkbox" id='confirmcheck' name="confirmcheck">
+				<label> Confirm </label>		
+				<br />			
+			</fieldset>
+			
+			<input type="submit">
+			
+			</form>
+			
+		</div>
+	</div>
+	</div>
+	<footer><!-- Make the footer part -->
+		<p>&copy; Copyright 2016</p><!-- Create the footer on the bottom of the pages -->
+	</footer>
+</div>
+</body>
+
+</html>

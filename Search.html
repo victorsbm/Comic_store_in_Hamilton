@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- To make a XHTML Structure with HTML5 doctype, XHTML tags must be written in lower case-->
+<head>
+<title> Comic store in Hamilton </title>
+<meta charset="UTF-8">
+<link href="Search.css" type="text/css" rel="stylesheet" />
+<!-- Connect the external css -->
+<script type="text/javascript" src="projectjs.js"></script>
+</head>
+<body><!-- Make the title in header -->
+<div id="page"><!-- Group all the parts of the page -->
+	<header>
+		<div id="pagetitle">
+			<h1> Comic store in Hamilton </h1>
+		</div>
+	<div id="menu"><!-- Make the navigation in a <nav> element -->
+		<nav>
+			<ul>
+				<li><a href=""> Home </a></li><!-- Since some of them are broken links because I don't have implemented all of the website -->
+				<li><a href="Search.html"> Search </a></li><!-- Go to the search.html by link. -->
+				<li><a href=""> Video </a></li>
+				<li><a href=""> About </a></li>
+				<li><a href=""> Contact </a></li>
+			</ul>
+		</nav>
+	</div>	
+	</header>
+	<div id="main"><!-- Use the <div> to group the sidebar and the content-->
+	<aside>
+		<ul><!--Make the register and log In in Sidebar -->
+		<li><a href="Registration.html"> Sign up </a></li>
+		<li><a href=" "> Log In </a></li>
+		</ul>
+		<br />
+	
+		<fieldset><!-- Create the news form in the sidebar -->
+		<legend> News: </legend>
+			<p><em>News: <strong>Anime North 2017</strong> is coming soon!</em></p>
+			<p>Anime North is an anime convention located in Toronto, Canada that celebrates anime, manga, music, games and all other forms of Japanese Culture!
+			Anime North will be the weekend of May 26 - 28, 2017 at the Toronto Congress Centre and International Plaza Hotel.</p>
+				<img src="animenorthlogo.png" alt="Magpie picture"/><!-- Add the image into news form-->
+		</fieldset>
+		<fieldset>
+		<legend> Find a friend: </legend>
+			<ul>
+			<li><a href=""> facebook </a></li>
+			<li><a href=""> twitter </a></li>
+			</ul>
+		</fieldset>
+	</aside>
+	<div id="content">
+		<fieldset>
+		<legend>Where are you: </legend>
+			<p id="message">Click the button to get coordinates and show the map</p>
+			<button onclick="getLocation()">Display location</button>
+			<div id="showmap"></div>
+		</fieldset>
+		<fieldset>
+			<legend>Search: </legend>
+				<label for="keyinput">Enter keyword: 
+				<br />
+				<input id="keyinput" type ="search" name="keyword" size="30" maxlength="20"></label>
+				<input type="submit" value="Search">
+				<p> OR </p>
+				<label for="rating_range">Rating: 
+				<select name="rating" id="rating_range">
+					<option value="0"> --------------</option>
+					<option value="1">0~1</option>
+					<option value="2">1~2</option>
+					<option value="3">2~3</option>
+					<option value="4">3~4</option>
+					<option value="4">4~5</option>
+				</select></label> 
+				<input type="submit" value="Go">
+		</fieldset>
+	</div>
+	</div>
+	<footer><!-- Make the footer part -->
+		<p>&copy; Copyright 2016</p><!-- Create the footer on the bottom of the pages -->
+	</footer>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+@media (orientation: portrait) {/* Use as portrait model */
+	body {/*To change the background color of the page and set the liquid layout */
+		width: 100%;
+		margin: 0 auto;
+		background-color: yellow;
+	}
+	#page {
+		overflow: auto;/*To make the page to overflow auto depend on the size of screen*/
+	}
+	header{/*To change the header background color to orange*/
+		background-color: orange;
+	}
+	#pagetitle{
+		text-align: center;/*To make the title to the middle of the header */
+	}
+	nav, footer{/*To change background color and the text color  navigation and footer */
+		clear: both;
+		color: black;
+		background-color: #aeaca8;
+	}
+	textarea{/*Create the liquidity of textarea*/
+		width: 98%;
+	}
+		
+
+	nav li{/* Make the navigation in meun into line, and make the distance between the link */
+		display: inline;
+		padding: 2em;
+	}
+	#main{/*In order to liquid layout, to make the main to cover the area between the header and the rooter */
+		width: 98%;
+		height: 98%;
+		
+	}
+	#content1, #content2, #content3, #content4{/*To set the size of contents */
+		width: 98%;
+		margin: 1%;
+		
+	}
+	#locamap{
+		width: 80%;
+		height: 400px;
+	}/*To set the liquidity of the map*/
+
+
+	
+	aside{	/* change the background color of the sidebar */
+		background-color: orange;
+		margin:1%;
+		padding: 2em;
+	}
+	#content{
+		width: 98%;/*Make the content to the right */	
+	}
+	table, th{/*Decide the style of rating and background of color in rating*/
+		border: 1px solid black;
+		background-color: #f0ffff
+	}
+	table{/* Create the liquidity of the rating and size of the rating word */
+		width:90%;
+		font-size: 50px;
+	}
+
+	h1{/*change the size of title*/
+		font-size: 80px;
+		
+	}
+	legend{/*change the size of legend, the word of fieldset */
+		font-size: 40px;
+		
+	}
+	input{
+		width: 98%; height:45px; /*change the size of input */
+		font-size:34px;/*change the size of input text*/
+	}
+	
+	
+	p, li, label , h2{/*change the size of the fonts*/
+		font-size: 60px;
+		
+	}
+	textarea, input{	/*Change the color of input button and the textarea */
+		background-color: #f0ffff
+		
+	}
+	#commant1, #commant2{/* Create the liquidity of the comments and change the background  in each of the comment */
+		width: 95%;
+		background-color: #eee8aa;
+	}
+	img{/* Create the liquidity of the image */
+		width:100%;
+	}
+	
+}
+
+
+
+
+
+
+@media (orientation: landscape) {/* Use as landscape model and computer screen */
+
+	
+		body {/*To change the background color of the page and set the liquid layout */
+		width: 98%;
+		margin: 0 auto;
+		background-color: yellow;
+	}
+	#page {
+		overflow: auto;/*To make the page to overflow auto depend on the size of screen*/
+	}
+	header{/*To change the header background color to orange*/
+		background-color: orange;
+	}
+	#pagetitle{
+		text-align: center;/*To make the title to the middle of the header */
+	}
+	nav, footer{/*To change background color and the text color  navigation and footer */
+		clear: both;
+		color: black;
+		background-color: #aeaca8;
+	}
+	textarea{/*Create the liquidity of textarea*/
+		width: 95%;
+	}
+		
+
+	nav li{/* Make the navigation in meun into line, and make the distance between the link */
+		display: inline;
+		padding: 2em;
+	}
+	#main{/*In order to liquid layout, to make the main to cover the area between the header and the rooter */
+		width: 100%;
+		height: 100%;
+		
+	}
+	#content1, #content2, #content3, #content4{/*To set the size of contents */
+		width: 70%;
+		float: left;
+		margin: 1%;
+		
+	}
+	#locamap{
+		width: 90%;
+		height: 400px;
+	}/*To set the liquidity of the map*/
+
+
+	.colume1 {/* To separate the hours and rating in the content2 */
+		width: 65%;
+		float: left;
+		margin: 1%;}
+		
+	.colume2{
+		margin: 1%;
+	}
+	
+	aside{	/*Make the sidebar to the left and change the background color of the sidebar */
+		background-color: orange;
+		margin:1%;
+		float: left;
+		width: 20%;
+		height: 100%;
+		padding: 2em;
+	}
+	#content{
+		float: right;
+		width: 70%;/*Make the content to the right */	
+	}
+	table, th{/*Decide the style of rating and background of color in rating*/
+		border: 1px solid black;
+		background-color: #f0ffff
+	}
+	table{/* Create the liquidity of the rating */
+		width:30%;
+	}
+
+	
+	textarea, input{	/*Change the color of input button and the textarea */
+		background-color: #f0ffff
+		
+	}
+	#commant1, #commant2{/* Create the liquidity of the comments and change the background  in each of the comment */
+		width: 80%;
+		background-color: #eee8aa;
+	}
+	img{/* Create the liquidity of the image */
+		width:100%;
+	}
+	
+	
+	
+	
+
+
+	
+}
+
